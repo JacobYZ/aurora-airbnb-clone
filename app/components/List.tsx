@@ -5,7 +5,7 @@ interface ListProps {
 }
 
 const List: React.FC<ListProps> = ({ getItems }) => {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState<number[]>([]);
   useEffect(() => {
     setItems(getItems());
     console.log("updating items");
