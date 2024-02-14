@@ -67,7 +67,7 @@ const YouTubeForm = () => {
               message: "Invalid email address",
             },
             validate: {
-              notAdmin: (value) => value !== "admin@example.com" || "Nice try!",
+              notAdmin: (value) => value !== "admin@example.com" || "Nice try",
               notBlacklisted: (value) =>
                 !value.endsWith("xx.xxx") || "We don't allow those emails",
             },

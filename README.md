@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-**Node version 14.x**
+Node version 14.x
 
 ### **Installation**
 
