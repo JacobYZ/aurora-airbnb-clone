@@ -16,8 +16,8 @@ export default async function getCurrentUser() {
       where: { email: session.user.email as string },
     });
     // Log all users
-    const allUsers = await prisma.user.findMany();
-    console.log(allUsers);
+    // const allUsers = await prisma.user.findMany();
+    // console.log(allUsers);
     if (!currentUser) return null;
     return {
       ...currentUser,
