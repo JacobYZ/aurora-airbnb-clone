@@ -36,32 +36,34 @@ To get a local copy up and running follow these simple steps.
     
     ```sh
     git clone https://github.com/JacobYZ/aurora-airbnb-clone.git
+    ```
     
 2. Install NPM packages
     
     ```sh
     npm install
+    ```
     
 3. Setup .env file
     
     ```js
-DATABASE_URL=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-GITHUB_ID=
-GITHUB_SECRET=
-NEXTAUTH_SECRET=
-```
+    DATABASE_URL=
+    GOOGLE_CLIENT_ID=
+    GOOGLE_CLIENT_SECRET=
+    GITHUB_ID=
+    GITHUB_SECRET=
+    NEXTAUTH_SECRET=
+    ```
 4. Setup Prisma
     
     ```sh
     npx prisma db push
-```
+    ```
 5. Start the development server
     
     ```sh
     npm run dev
-```
+    ```
 ## **Contributing**
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
