@@ -13,9 +13,11 @@ This project is an Airbnb clone built with Next.js 13, designed to replicate som
 
 ## Technologies Used
 
-- Next.js 13
+- Next.js
 - React
-- CSS Modules
+- MongoDB
+- Tailwind CSS
+- Prisma
 
 ## Getting Started
 
@@ -31,30 +33,21 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
     
-    ```
-    shCopy code
-    git clone https://github.com/YOUR_GITHUB_USERNAME/next13-airbnb-clone.git
-    
-    ```
+    ```sh
+    git clone https://github.com/JacobYZ/aurora-airbnb-clone.git
     
 2. Install NPM packages
     
-    ```
-    shCopy code
+    ```sh
     npm install
-    
-    ```
     
 3. Start the development server
     
-    ```
-    shCopy code
+    ```sh
     npm run dev
     
-    ```
     
 
-## **Contributing**
 ## **Contributing**
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
