@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is an Airbnb clone built with Next.js 13, designed to replicate some of the core features of the Airbnb website as a learning exercise. It was inspired by a tutorial by Antonio Erdeljac. The main goal of this project is to understand and implement modern web development practices using Next.js.
+This project is an Airbnb clone built with Next.js, designed to replicate some of the core features of the Airbnb website. It was inspired by a tutorial by [Antonio Erdeljac](https://github.com/AntonioErdeljac/next13-airbnb-clone). The main goal of this project is to understand and implement modern web development practices using Next.js.
 
 ## Features
 
@@ -14,10 +14,13 @@ This project is an Airbnb clone built with Next.js 13, designed to replicate som
 ## Technologies Used
 
 - Next.js
-- React
+- React.js
 - MongoDB
 - Tailwind CSS
 - Prisma
+- TypeScript
+- NextAuth.js
+- Vercel
 
 ## Getting Started
 
@@ -25,9 +28,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-- npm
-  ```sh
-  npm install npm@latest -g
+**Node version 14.x**
 
 ### **Installation**
 
@@ -41,13 +42,26 @@ To get a local copy up and running follow these simple steps.
     ```sh
     npm install
     
-3. Start the development server
+3. Setup .env file
+    
+    ```js
+DATABASE_URL=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GITHUB_ID=
+GITHUB_SECRET=
+NEXTAUTH_SECRET=
+```
+4. Setup Prisma
+    
+    ```sh
+    npx prisma db push
+```
+5. Start the development server
     
     ```sh
     npm run dev
-    
-    
-
+```
 ## **Contributing**
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
