@@ -1,3 +1,4 @@
+"use client";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
 import { IconType } from "react-icons";
@@ -26,7 +27,7 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
     if (params?.get("category") === label) {
       delete updatedQuery.category;
     }
-    console.log("updatedQuery", updatedQuery)
+    console.log("updatedQuery", updatedQuery);
     const url = qs.stringifyUrl(
       {
         url: "/",
