@@ -3,8 +3,8 @@ import { NextResponse } from "next/server";
 import getCurrentUser from "@/app/actions/getCurrentuser";
 
 export async function POST(request: Request) {
-  const curentUser = await getCurrentUser();
-  if (!curentUser) {
+  const currentUser = await getCurrentUser();
+  if (!currentUser) {
     return NextResponse.error();
   }
   const body = await request.json();
@@ -19,6 +19,12 @@ export async function POST(request: Request) {
     roomCount,
     bathroomCount,
   } = body;
+
+  // Validate price
+  if (parseInt(price, 10) <= 0) {
+    return NextResponse.error();
+  }
+
   const listing = await prisma.listing.create({
     data: {
       title,
@@ -30,7 +36,7 @@ export async function POST(request: Request) {
       guestCount,
       roomCount,
       bathroomCount,
-      userId: curentUser.id,
+      userId: currentUser.id,
     },
   });
   return NextResponse.json(listing);

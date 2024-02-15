@@ -50,7 +50,6 @@ const RentModal = () => {
   });
   const category = watch("category");
   const location = watch("location");
-  console.log(location);
   const guestCount = watch("guestCount");
   const roomCount = watch("roomCount");
   const bathroomCount = watch("bathroomCount");
@@ -75,6 +74,11 @@ const RentModal = () => {
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     if (step !== STEPS.PRICE) {
       onNext();
+      return;
+    }
+    // Parse price to integer and check if it's greater than 0
+    if (parseInt(data.price, 10) <= 0) {
+      toast.error("The price must be greater than 0");
       return;
     }
     setIsLoading(true);
@@ -224,6 +228,7 @@ const RentModal = () => {
         <Input
           id="price"
           label="Price"
+          type="number"
           disabled={isLoading}
           register={register}
           errors={errors}
