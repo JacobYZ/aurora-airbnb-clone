@@ -7,6 +7,7 @@ import { categories } from "../navbar/Categories";
 import CategoryInput from "../inputs/CategoryInput";
 import { FieldValues, set, useForm } from "react-hook-form";
 import { title } from "process";
+import CountrySelect, { CountrySelectValue } from "../inputs/CountrySelect";
 enum STEPS {
   CATEGORY = 0,
   LOCATION = 1,
@@ -86,11 +87,24 @@ const RentModal = () => {
       </div>
     </div>
   );
+  if (step === STEPS.LOCATION) {
+    bodyContent = (
+      <div className="flex flex-col gap-8">
+        <Heading
+          title="Where's your place located?"
+          subtitle="Help guests find you"
+        />
+        <CountrySelect onChange={function (value: CountrySelectValue): void {
+          throw new Error("Function not implemented.");
+        } } />
+      </div>
+    );
+  }
   return (
     <Modal
       isOpen={rentModal.isOpen}
       onClose={rentModal.onClose}
-      onSubmit={rentModal.onClose}
+      onSubmit={onNext}
       actionLabel={actionLabel}
       secondaryActionLabel={secondaryActionLabel}
       secondaryAction={step === STEPS.CATEGORY ? undefined : onBack}
