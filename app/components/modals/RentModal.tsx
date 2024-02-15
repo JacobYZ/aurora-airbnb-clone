@@ -50,6 +50,7 @@ const RentModal = () => {
   });
   const category = watch("category");
   const location = watch("location");
+  console.log(location);
   const guestCount = watch("guestCount");
   const roomCount = watch("roomCount");
   const bathroomCount = watch("bathroomCount");
