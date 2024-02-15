@@ -3,6 +3,7 @@ import useRentModal from "@/app/hooks/useRentModal";
 import Modal from "./Modal";
 import { useMemo, useState } from "react";
 import Heading from "../Heading";
+import Map from "../Map";
 import { categories } from "../navbar/Categories";
 import CategoryInput from "../inputs/CategoryInput";
 import { FieldValues, set, useForm } from "react-hook-form";
@@ -40,6 +41,7 @@ const RentModal = () => {
     },
   });
   const category = watch("category");
+  const location = watch("location");
   const setCustomeValue = (id: string, value: any) => {
     setValue(id, value, {
       shouldValidate: true,
@@ -94,9 +96,11 @@ const RentModal = () => {
           title="Where's your place located?"
           subtitle="Help guests find you"
         />
-        <CountrySelect onChange={function (value: CountrySelectValue): void {
-          throw new Error("Function not implemented.");
-        } } />
+        <CountrySelect
+          value={location}
+          onChange={(value) => setCustomeValue("location", value)}
+        />
+        <Map />
       </div>
     );
   }
