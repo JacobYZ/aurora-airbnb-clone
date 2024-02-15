@@ -96,7 +96,7 @@ const Categories = () => {
   const category = params?.get("category");
   const pathname = usePathname();
   const isMainPage = pathname === "/";
-  console.log("category", category);
+  // console.log("category", category);
   if (!isMainPage) return null;
   return (
     <Container>
