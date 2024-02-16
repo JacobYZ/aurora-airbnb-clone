@@ -21,7 +21,7 @@ export const categories = [
   {
     label: "Beach",
     icon: TbBeach,
-    description: "This property is close to the beach",
+    description: "This property is close to a beach",
   },
   {
     label: "Windmills",
@@ -61,13 +61,13 @@ export const categories = [
   {
     label: "Castle",
     icon: GiCastle,
-    description: "This property is in a castle",
+    description: "This property is a castle",
   },
 
   {
     label: "Camping",
     icon: GiForestCamp,
-    description: "This property is has camping activities",
+    description: "This property is close to a camping site",
   },
   {
     label: "Arctic",
@@ -82,7 +82,7 @@ export const categories = [
   {
     label: "Desert",
     icon: GiCactus,
-    description: "This property is in the desert",
+    description: "This property is in a desert",
   },
   {
     label: "Barn",
