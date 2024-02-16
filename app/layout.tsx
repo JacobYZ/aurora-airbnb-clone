@@ -7,7 +7,7 @@ import RegisterModal from "./components/modals/RegisterModal";
 import LoginModal from "./components/modals/LoginModal";
 import RentModal from "./components/modals/RentModal";
 import ToasterProvider from "./providers/ToasterProvider";
-import getCurrentUser from "./actions/getCurrentuser";
+import getCurrentUser from "./actions/getCurrentUser";
 const font = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
