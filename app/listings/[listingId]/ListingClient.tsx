@@ -61,7 +61,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
       });
       toast.success("Listing reserved successfully");
       setDateRange(initialDateRange);
-      //TODO: Redirect to /trips
+      router.push("/trips");
       router.refresh();
     } catch (error) {
       if (error instanceof Error) {
