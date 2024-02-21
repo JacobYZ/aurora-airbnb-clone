@@ -10,7 +10,13 @@ const List: React.FC<ListProps> = ({ getItems }) => {
     setItems(getItems());
     console.log("updating items");
   }, [getItems]);
-  return items.map((item, index) => <div key={index}>{item}</div>);
+  return (
+    <>
+      {items.map((item, index) => (
+        <div key={index}>{item}</div>
+      ))}
+    </>
+  );
 };
 
 export default List;

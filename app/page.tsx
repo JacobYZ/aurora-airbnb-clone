@@ -1,13 +1,13 @@
 import Container from "./components/Container";
 import ClientOnly from "./components/ClientOnly";
 import EmptyState from "./components/EmptyState";
-import getListings, { IListingParams } from "./actions/getListings";
+import getListings, { IListingsParams } from "./actions/getListings";
 import ListingCard from "./components/listings/ListingCard";
 import getCurrentUser from "./actions/getCurrentUser";
 interface HomeProps {
-  searchParams: IListingParams;
+  searchParams: IListingsParams;
 }
-const Home: React.FC<HomeProps> = async ({ searchParams }: HomeProps) => {
+const Home = async ({ searchParams }: HomeProps) => {
   const listings = await getListings(searchParams);
   const currentUser = await getCurrentUser();
   // console.log(listings);

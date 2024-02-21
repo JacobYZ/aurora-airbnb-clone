@@ -1,5 +1,5 @@
 import prisma from "@/app/libs/prismadb";
-export interface IListingParams {
+export interface IListingsParams {
   userId?: string;
   guestCount?: number;
   roomCount?: number;
@@ -9,7 +9,7 @@ export interface IListingParams {
   endDate?: string;
   category?: string;
 }
-export default async function getListings(params: IListingParams) {
+export default async function getListings(params: IListingsParams) {
   try {
     const {
       userId,
