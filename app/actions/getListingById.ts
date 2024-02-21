@@ -24,7 +24,11 @@ export default async function getListingById(params: GetListingByIdParams) {
         emailVerified: listing.user.emailVerified?.toISOString() || null,
       },
     };
-  } catch (error: any) {
-    throw new Error(error.message);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      throw new Error(error.message);
+    } else {
+      throw new Error("An error occurred while fetching the listing");
+    }
   }
 }
