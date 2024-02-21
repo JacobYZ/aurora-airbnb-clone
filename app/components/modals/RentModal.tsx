@@ -58,7 +58,7 @@ const RentModal = () => {
     () => dynamic(() => import("../Map"), { ssr: false }),
     [location]
   );
-  const setCustomeValue = (id: string, value: any) => {
+  const setCustomValue = (id: string, value: any) => {
     setValue(id, value, {
       shouldValidate: true,
       shouldDirty: true,
@@ -123,7 +123,7 @@ const RentModal = () => {
             key={item.label}
             className="col-span-1">
             <CategoryInput
-              onClick={(category) => setCustomeValue("category", category)}
+              onClick={(category) => setCustomValue("category", category)}
               selected={category === item.label}
               label={item.label}
               icon={item.icon}
@@ -142,7 +142,7 @@ const RentModal = () => {
         />
         <CountrySelect
           value={location}
-          onChange={(value) => setCustomeValue("location", value)}
+          onChange={(value) => setCustomValue("location", value)}
         />
         <Map center={location?.latlng} />
       </div>
@@ -159,21 +159,21 @@ const RentModal = () => {
           title="Guests"
           subtitle="How many guests do you allow?"
           value={guestCount}
-          onChange={(value) => setCustomeValue("guestCount", value)}
+          onChange={(value) => setCustomValue("guestCount", value)}
         />
         <hr />
         <Counter
           title="Rooms"
           subtitle="How many rooms do you have?"
           value={roomCount}
-          onChange={(value) => setCustomeValue("roomCount", value)}
+          onChange={(value) => setCustomValue("roomCount", value)}
         />
         <hr />
         <Counter
           title="Bathrooms"
           subtitle="How many bathrooms do you have?"
           value={bathroomCount}
-          onChange={(value) => setCustomeValue("bathroomCount", value)}
+          onChange={(value) => setCustomValue("bathroomCount", value)}
         />
       </div>
     );
@@ -187,7 +187,7 @@ const RentModal = () => {
         />
         <ImageUpload
           value={imageSrc}
-          onChange={(value) => setCustomeValue("imageSrc", value)}
+          onChange={(value) => setCustomValue("imageSrc", value)}
         />
       </div>
     );
