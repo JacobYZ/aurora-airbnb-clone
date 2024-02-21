@@ -14,6 +14,7 @@ const ReservationPage = async () => {
         <EmptyState
           title="Unauthorized"
           subtitle="Please login"
+          //   TODO: Add a login button
         />
       </ClientOnly>
     );
