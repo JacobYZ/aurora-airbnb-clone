@@ -4,6 +4,10 @@
 
 This project is a full-stack web application designed to replicate some of the core features of the Airbnb, a popular online marketplace for lodging and tourism. It was inspired by a tutorial by [Antonio Erdeljac](https://github.com/AntonioErdeljac/next13-airbnb-clone). The main goal of this project is to implement modern web development practices using Next.js.
 
+## Demo
+
+You can try out the game at [https://booking.auroraweb.com.au/](https://booking.auroraweb.com.au/)
+
 ## Features
 
 - User authentication with email, Google, or GitHub
@@ -13,7 +17,6 @@ This project is a full-stack web application designed to replicate some of the c
 - Property booking and reservation system with guest and owner reservation cancellation
 - Property favoriting and shareable URL filters
 - Responsive design and animations
-
 
 ## Technologies Used
 
@@ -42,37 +45,40 @@ To get a local copy up and running follow these simple steps.
 ### **Installation**
 
 1. Clone the repo
-    
-    ```sh
-    git clone https://github.com/JacobYZ/aurora-airbnb-clone.git
-    ```
-    
+
+   ```sh
+   git clone https://github.com/JacobYZ/aurora-airbnb-clone.git
+   ```
+
 2. Install NPM packages
-    
-    ```sh
-    npm install
-    ```
-    
+
+   ```sh
+   npm install
+   ```
+
 3. Setup .env file
-    
-    ```js
-    DATABASE_URL=
-    GOOGLE_CLIENT_ID=
-    GOOGLE_CLIENT_SECRET=
-    GITHUB_ID=
-    GITHUB_SECRET=
-    NEXTAUTH_SECRET=
-    ```
+
+   ```js
+   DATABASE_URL=
+   GOOGLE_CLIENT_ID=
+   GOOGLE_CLIENT_SECRET=
+   GITHUB_ID=
+   GITHUB_SECRET=
+   NEXTAUTH_SECRET=
+   ```
+
 4. Setup Prisma
-    
-    ```sh
-    npx prisma db push
-    ```
+
+   ```sh
+   npx prisma db push
+   ```
+
 5. Start the development server
-    
-    ```sh
-    npm run dev
-    ```
+
+   ```sh
+   npm run dev
+   ```
+
 ## **Contributing**
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
