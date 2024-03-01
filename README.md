@@ -2,33 +2,42 @@
 
 ## Introduction
 
-This project is an Airbnb clone built with Next.js, designed to replicate some of the core features of the Airbnb website. It was inspired by a tutorial by [Antonio Erdeljac](https://github.com/AntonioErdeljac/next13-airbnb-clone). The main goal of this project is to understand and implement modern web development practices using Next.js.
+This project is a full-stack web application designed to replicate some of the core features of the Airbnb, a popular online marketplace for lodging and tourism. It was inspired by a tutorial by [Antonio Erdeljac](https://github.com/AntonioErdeljac/next13-airbnb-clone). The main goal of this project is to implement modern web development practices using Next.js.
 
 ## Features
 
-- Browse listings
-- Search for properties by location
-- View property details
-- Responsive design for mobile and desktop
+- User authentication with email, Google, or GitHub
+- User profile with property management and reservation history
+- Property creation with image upload and Cloudinary integration
+- Property search by category, date range, map location, number of guests, rooms, and bathrooms
+- Property booking and reservation system with guest and owner reservation cancellation
+- Property favoriting and shareable URL filters
+- Responsive design and animations
+
 
 ## Technologies Used
 
-- Next.js
-- React.js
-- MongoDB
-- Tailwind CSS
-- Prisma
-- TypeScript
-- NextAuth.js
-- Vercel
+- Next.js with app router, server components, and client components
+- Tailwind CSS for styling and animations
+- Prisma for database access and schema management
+- MongoDB for data storage
+- NextAuth for authentication and authorization
+- Cloudinary for image upload and CDN
+- React Hook Form for form validation and handling
+- React Toast for server error handling
+- React Date Range for calendars
+- Leaflet for interactive maps
 
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
+### Requirements and Dependencies
 
-Node version 14.x
+- Node.js 14 or higher
+- MongoDB Atlas account
+- Google and GitHub OAuth credentials
+- Cloudinary account for image uploads
 
 ### **Installation**
 
