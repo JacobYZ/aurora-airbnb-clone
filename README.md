@@ -6,7 +6,7 @@ This project is a full-stack web application designed to replicate some of the c
 
 ## Demo
 
-You can try out the game at [https://booking.auroraweb.com.au/](https://booking.auroraweb.com.au/)
+You can try out the application at [https://booking.auroraweb.com.au/](https://booking.auroraweb.com.au/)
 
 ## Features
 
